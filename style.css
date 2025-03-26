@@ -1,0 +1,173 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("i1.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.form h2 {
+    text-align: center;
+    color: #000000;
+
+}
+.form h4{
+    text-align: center;
+    color: #000000;
+
+}
+
+.form {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    color: transparent;
+    backdrop-filter: blur(10px);
+    font-family: monospace;
+}
+
+.form input {
+    width: 77%;
+    height: 1px;
+    background: transparent;
+    margin: 5px;
+    border: none;
+    outline: none;
+    border-bottom: solid 2px ;
+    padding: 16px 45px 16px 20px;
+}
+
+
+.form input::placeholder {
+    color: rgba(2, 2, 2, 0.543);
+    font-family: monospace;
+    font-weight: bold;
+    pointer-events:none;
+    
+}
+.form:hover input::placeholder,
+.form:hover select{
+    color: aliceblue;
+    transition: 1s;
+
+}
+
+.form option{
+    
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0 0 10px cyan;
+    margin : 20px;
+}
+.form:hover option{
+    color:black
+}
+.form .button {
+    margin-top: 20px;
+}
+
+.form select {
+    width: 97%;
+    background: transparent;
+    margin: 5px;
+    border: none;
+    outline: none;
+    border-bottom: solid 2px rgba(0, 0, 0);
+    padding: 10px 15px 10px 15px;
+    color: rgba(2, 2, 2, 0.543);
+    font-family: monospace;
+    font-weight: bold;
+    
+}
+
+
+.form .cancel {
+    background: rgba(0, 0, 0, 0.256);
+    backdrop-filter: blur(100vh);
+    margin: 3px;
+    border: none;
+    outline: none;
+    border: solid 1.5px rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 10px 15px 10px 15px;
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+    font-weight: bold;
+}
+.form .ok {
+    background: rgba(0, 0, 0, 0.256);
+    backdrop-filter: blur(100vh);
+    margin: 3px;
+    margin-left:155px;
+    border: none;
+    outline: none;
+    border: solid 1.5px rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 10px 30px 10px 25px;
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.form input:hover {
+    border-color: cyan;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: .9s;
+}
+.form select:hover {
+    border-color: cyan;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-shadow: 0 0 3px cyan;
+    transition: .9s;
+}
+
+
+.form:hover{
+
+    background-color: rgba(0, 0, 0, 0.541);
+    border-color:cyan;
+    transition: 2s;
+    box-shadow: 0 0 10px cyan ;
+    transition-delay: 0.5s;
+    
+}
+.form:hover .ok,
+.form:hover .cancel{
+    background-color: cyan;
+    transition: 1s;
+}
+.form .cancel:hover,
+.form .ok:hover{
+    color : black;
+    transition : .5s;
+    background-color: white;
+    box-shadow: 0 0 10px cyan;
+    transition : .5s;
+}
+
+
+
+.form:hover h2,
+.form:hover h4{
+    color:aliceblue;
+    text-decoration: underline;
+    text-shadow: 0 0 10px cyan;
+    transition:.5s;
+}
+
+.form input:hover::placeholder {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-shadow:0 0 3px cyan;
+    transition: 1s;
+}
+
+.form input:not(:placeholder-shown){
+    color:rgb(255, 255, 255);
+    text-shadow:  0 0 3px cyan;
+}
